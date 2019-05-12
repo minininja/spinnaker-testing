@@ -7,6 +7,4 @@ keywords:
 - web
 kubeVersion: '>=1.2.0'
 name: spinTestingChart
-sources:
-- https://hub.docker.com/_/nginx/
 version: 0.1.0
