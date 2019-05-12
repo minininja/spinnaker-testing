@@ -1,0 +1,12 @@
+description: A basic chart for testing spinnaker
+home: https://github.com/helm/helm
+keywords:
+- http
+- nginx
+- www
+- web
+kubeVersion: '>=1.2.0'
+name: spinTestingChart
+sources:
+- https://hub.docker.com/_/nginx/
+version: 0.1.0

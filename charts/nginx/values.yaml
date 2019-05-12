@@ -1,0 +1,43 @@
+# Default values for nginx.
+# This is a YAML-formatted file.
+# Declare name/value pairs to be passed into your templates.
+
+configMap: true
+deployment: true
+replicaSet: false
+postJob: true
+preJob: true
+service: true
+serviceTest: true
+
+replicaCount: 1
+restartPolicy: Never
+namespace: default
+
+# Evaluated by the post-install hook
+sleepyTime: "10"
+
+index: >-
+  <h1>Hello</h1>
+  <p>This is a test</p>
+
+image:
+  repository: nginx
+  tag: alpine
+  pullPolicy: IfNotPresent
+
+service:
+  annotations: {}
+  clusterIP: ""
+  externalIPs: []
+  loadBalancerIP: ""
+  loadBalancerSourceRanges: []
+  type: NodePort
+  port: 8888
+  nodePort: ""
+
+podAnnotations: {}
+
+resources: {}
+
+nodeSelector: {}
