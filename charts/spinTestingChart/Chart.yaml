@@ -6,5 +6,5 @@ keywords:
 - www
 - web
 kubeVersion: '>=1.2.0'
-name: spinTestingChart
+name: spin-testing-chart
 version: 0.1.0
